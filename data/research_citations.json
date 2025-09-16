@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "type": "academic_paper",
+    "title": "Vibe coding: programming through conversation with artificial intelligence",
+    "authors": [
+      "Anonymous Authors"
+    ],
+    "year": 2025,
+    "source": "arXiv preprint",
+    "url": "https://arxiv.org/abs/2506.23253",
+    "key_finding": "First formal definition of vibe coding as conversational programming paradigm"
+  },
+  {
+    "id": 2,
+    "type": "industry_analysis",
+    "title": "What is Vibe Coding?",
+    "authors": [
+      "Replit Team"
+    ],
+    "year": 2025,
+    "source": "Replit Blog",
+    "url": "https://blog.replit.com/what-is-vibe-coding",
+    "key_finding": "Practical implementation of vibe coding in development environments"
+  },
+  {
+    "id": 3,
+    "type": "research_study",
+    "title": "Hyperfocus: the forgotten frontier of attention",
+    "authors": [
+      "Ashinoff & Abu-Akel"
+    ],
+    "year": 2019,
+    "source": "PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7851038/",
+    "key_finding": "Scientific validation of hyperfocus as distinct cognitive state"
+  },
+  {
+    "id": 4,
+    "type": "industry_report",
+    "title": "The Future of AI in Coding: Trends and Predictions",
+    "authors": [
+      "Algocademy Team"
+    ],
+    "year": 2024,
+    "source": "Industry Analysis",
+    "url": "https://algocademy.com/blog/the-future-of-ai-in-coding-trends-and-predictions/",
+    "key_finding": "Comprehensive analysis of AI coding trends and future predictions"
+  }
+]

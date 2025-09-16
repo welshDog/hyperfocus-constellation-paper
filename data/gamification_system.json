@@ -1,0 +1,93 @@
+{
+  "achievement_categories": [
+    {
+      "name": "Explorer Badges",
+      "description": "For discovering and reading research sections",
+      "badges": [
+        {
+          "name": "Origins Explorer",
+          "requirement": "Read vibe coding origins section"
+        },
+        {
+          "name": "Future Visionary",
+          "requirement": "Complete future trends section"
+        },
+        {
+          "name": "Hyperfocus Master",
+          "requirement": "Engage with hyperfocus content for 30+ minutes"
+        },
+        {
+          "name": "Constellation Navigator",
+          "requirement": "Visit all research nodes"
+        }
+      ]
+    },
+    {
+      "name": "Engagement Levels",
+      "description": "Based on time spent and interaction depth",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Curious Coder",
+          "requirement": "5 minutes engagement"
+        },
+        {
+          "level": 2,
+          "name": "Research Enthusiast",
+          "requirement": "20 minutes engagement"
+        },
+        {
+          "level": 3,
+          "name": "Hyperfocus Hero",
+          "requirement": "60 minutes engagement"
+        },
+        {
+          "level": 4,
+          "name": "Vibe Code Pioneer",
+          "requirement": "120 minutes engagement"
+        },
+        {
+          "level": 5,
+          "name": "BROski\u267e Legend",
+          "requirement": "240 minutes engagement"
+        }
+      ]
+    },
+    {
+      "name": "Contribution Rewards",
+      "description": "For adding content and helping the community",
+      "rewards": [
+        {
+          "name": "Knowledge Contributor",
+          "requirement": "Add research link or insight"
+        },
+        {
+          "name": "Community Builder",
+          "requirement": "Help 5 other users"
+        },
+        {
+          "name": "Innovation Catalyst",
+          "requirement": "Suggest new features"
+        },
+        {
+          "name": "Neurodiversity Advocate",
+          "requirement": "Share accessibility improvements"
+        }
+      ]
+    }
+  ],
+  "progress_tracking": {
+    "visual_elements": [
+      "Constellation completion percentage",
+      "Research node glow intensity based on engagement",
+      "Personal learning pathway visualization",
+      "Achievement badge collection display"
+    ],
+    "metrics": [
+      "Time spent in hyperfocus sessions",
+      "Sections completed",
+      "Community contributions made",
+      "Personal notes and insights added"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "hyperfocus-constellation-paper",
+  "version": "1.0.0",
+  "description": "\ud83c\udf1f Revolutionary 3D interactive research paper on vibe coding and hyperfocus superpowers",
+  "main": "src/index.html",
+  "homepage": "https://lyndz-williams.github.io/hyperfocus-constellation-paper",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server src/ --port=8080",
+    "build": "npm run optimize && npm run minify",
+    "deploy": "gh-pages -d src",
+    "test": "jest tests/",
+    "test:accessibility": "axe-cli src/index.html",
+    "lint": "eslint src/ --fix",
+    "format": "prettier --write src/",
+    "optimize": "node scripts/optimize-assets.js",
+    "minify": "terser src/app.js -o src/app.min.js",
+    "validate": "html5validator src/index.html"
+  },
+  "keywords": [
+    "vibe-coding",
+    "hyperfocus",
+    "adhd",
+    "neurodiversity",
+    "interactive-research",
+    "3d-interface",
+    "ai-programming",
+    "accessibility",
+    "gamification",
+    "threejs",
+    "revolution"
+  ],
+  "author": {
+    "name": "Lyndz Williams",
+    "email": "lyndz@hyperfocus-constellation.dev",
+    "url": "https://github.com/lyndz-williams"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyndz-williams/hyperfocus-constellation-paper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lyndz-williams/hyperfocus-constellation-paper/issues"
+  },
+  "dependencies": {
+    "three": "^0.155.0",
+    "gsap": "^3.12.0",
+    "dat.gui": "^0.7.9"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.0",
+    "jest": "^29.7.0",
+    "gh-pages": "^6.0.0",
+    "@axe-core/cli": "^4.8.0",
+    "html5validator": "^0.4.0",
+    "terser": "^5.20.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

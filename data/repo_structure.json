@@ -1,0 +1,68 @@
+{
+  "repository_name": "hyperfocus-constellation-paper",
+  "description": "\ud83c\udf1f Revolutionary 3D Interactive Research Paper: Vibe Code, AI, and the Hyperfocus Future",
+  "folders": [
+    {
+      "name": "docs",
+      "purpose": "Documentation and research content",
+      "files": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "research-summary.md"
+      ]
+    },
+    {
+      "name": "src",
+      "purpose": "Source code for 3D constellation interface",
+      "files": [
+        "index.html",
+        "style.css",
+        "app.js",
+        "three.min.js"
+      ]
+    },
+    {
+      "name": "data",
+      "purpose": "Research data, citations, and content",
+      "files": [
+        "paper_structure.json",
+        "research_citations.json",
+        "hyperfocus_tips.json"
+      ]
+    },
+    {
+      "name": "assets",
+      "purpose": "Images, graphics, and media files",
+      "files": [
+        "constellation.png",
+        "research-timeline.png",
+        "badge-icons/"
+      ]
+    },
+    {
+      "name": "community",
+      "purpose": "Community contributions and extensions",
+      "files": [
+        "discussions.md",
+        "feature-requests.md",
+        "accessibility-improvements.md"
+      ]
+    },
+    {
+      "name": "api",
+      "purpose": "Backend services for dynamic content",
+      "files": [
+        "content-updater.js",
+        "gamification-tracker.js",
+        "community-features.js"
+      ]
+    }
+  ],
+  "special_features": [
+    "Adaptive README that changes based on user's GitHub activity",
+    "Live integration with research databases",
+    "Community contribution system with reputation tracking",
+    "Accessibility-first design with multiple interface modes",
+    "Real-time collaboration features for research teams"
+  ]
+}

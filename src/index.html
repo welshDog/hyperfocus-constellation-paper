@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Code: From Intuition to AI and the Hyperfocus Future</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">Vibe Code: From Intuition to AI and the Hyperfocus Future</h1>
+                <p class="subtitle">A Revolutionary Interactive Research Experience</p>
+                <div class="controls">
+                    <button class="btn btn--secondary" id="focusModeBtn">Focus Mode</button>
+                    <button class="btn btn--secondary" id="browseModeBtn">Browse Mode</button>
+                    <button class="btn btn--outline" id="resetViewBtn">Reset View</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Container -->
+        <main class="main-container">
+            <!-- 3D Scene Container -->
+            <div class="scene-container" id="sceneContainer">
+                <div class="loading" id="loading">
+                    <div class="loading-text">Initializing Constellation...</div>
+                </div>
+            </div>
+
+            <!-- Content Sidebar -->
+            <aside class="sidebar hidden" id="sidebar">
+                <div class="sidebar-header">
+                    <h2 id="sidebarTitle">Research Node</h2>
+                    <button class="btn btn--outline btn--sm" id="closeSidebar">×</button>
+                </div>
+                <div class="sidebar-content">
+                    <div class="content-summary" id="contentSummary"></div>
+                    <div class="key-points" id="keyPoints"></div>
+                    <div class="hyperfocus-tip" id="hyperfocusTip"></div>
+                    <div class="navigation-controls">
+                        <button class="btn btn--primary" id="backToConstellation">Back to Constellation</button>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Progress Indicator -->
+        <div class="progress-container">
+            <div class="progress-title">Exploration Progress</div>
+            <div class="progress-nodes" id="progressNodes"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- Instructions Overlay -->
+        <div class="instructions" id="instructions">
+            <div class="instructions-content">
+                <h3>Navigate the Research Constellation</h3>
+                <ul>
+                    <li><strong>Mouse:</strong> Drag to orbit, scroll to zoom</li>
+                    <li><strong>Hover:</strong> See node information</li>
+                    <li><strong>Click:</strong> Focus on research section</li>
+                    <li><strong>Keyboard:</strong> Tab to navigate, Enter to select</li>
+                </ul>
+                <button class="btn btn--primary" id="startExploring">Start Exploring</button>
+            </div>
+        </div>
+
+        <!-- Tooltip -->
+        <div class="tooltip hidden" id="tooltip">
+            <div class="tooltip-title"></div>
+            <div class="tooltip-description"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

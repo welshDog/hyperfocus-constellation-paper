@@ -1,0 +1,69 @@
+name: 🚀 Deploy Hyperfocus Constellation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v3
+
+    - name: 🔧 Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: 📦 Install dependencies
+      run: npm ci
+
+    - name: 🧪 Run tests
+      run: npm test
+
+    - name: ♿ Accessibility test
+      run: npm run test:accessibility
+
+    - name: 🔍 Lint code
+      run: npm run lint
+
+    - name: 🏗️ Build project
+      run: npm run build
+
+    - name: 🚀 Deploy to GitHub Pages
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./src
+        commit_message: '🌟 Deploy constellation update'
+
+  accessibility-audit:
+    runs-on: ubuntu-latest
+    name: ♿ Accessibility Audit
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: 🔍 Run accessibility audit
+      run: |
+        npm install -g @axe-core/cli
+        axe src/index.html --exit
+
+    - name: 📊 Generate accessibility report
+      run: |
+        axe src/index.html --reporter html > accessibility-report.html
+
+    - name: 📤 Upload accessibility report
+      uses: actions/upload-artifact@v3
+      with:
+        name: accessibility-report
+        path: accessibility-report.html
