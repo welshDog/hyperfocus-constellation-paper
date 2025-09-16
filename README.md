@@ -1,3 +1,7 @@
+![GitHub stars](https://img.shields.io/github/stars/welshDog/hyperfocus-constellation-paper)
+![GitHub forks](https://img.shields.io/github/forks/welshDog/hyperfocus-constellation-paper)
+![GitHub issues](https://img.shields.io/github/issues/welshDog/hyperfocus-constellation-paper)
+
 # 🌟 Hyperfocus Constellation: Vibe Code Research Revolution
 
 > **The first-ever 3D interactive research paper that adapts to your neurodivergent superpowers!**
