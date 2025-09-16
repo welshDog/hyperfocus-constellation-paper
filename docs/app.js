@@ -154,9 +154,18 @@ const researchData = {
       "hyperfocusTip": "These tools are battle-tested by neurodivergent developers worldwide!"
     }
   }
-await new Promise(resolve => setTimeout(resolve, 200));
+async init() {
+  this.initializeDOM();
+  this.setupEventListeners();
 
-  "connections": [
+  // ✅ Valid use of await inside async function
+  await new Promise(resolve => setTimeout(resolve, 200));
+
+  this.initializeScene();
+  this.createNodes();
+  ...
+}
+"connections": [
     {"from": "origins", "to": "current"},
     {"from": "current", "to": "future"},
     {"from": "hyperfocus", "to": "wisdom"},
@@ -165,7 +174,6 @@ await new Promise(resolve => setTimeout(resolve, 200));
     {"from": "future", "to": "community"}
   ]
 };
-
 class ConstellationApp {
   constructor() {
     this.scene = null;
