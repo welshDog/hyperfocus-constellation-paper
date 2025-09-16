@@ -10,7 +10,7 @@
 [![Neurodiversity Celebration](https://img.shields.io/badge/Neurodiversity-Celebrated-rainbow?style=for-the-badge&logo=heart)](https://github.com/lyndz-williams/hyperfocus-constellation-paper)
 [![Vibe Coding](https://img.shields.io/badge/Powered%20By-Vibe%20Coding-blue?style=for-the-badge&logo=magic)](https://github.com/lyndz-williams/hyperfocus-constellation-paper)
 
-## 🚀 **[LIVE DEMO - Experience the Revolution!](https://lyndz-williams.github.io/hyperfocus-constellation-paper/)**
+## 🚀 **[LIVE DEMO - Experience the Revolution!](https://welshdog.github.io/hyperfocus-constellation-paper/)**
 
 This isn't just a research paper - it's a **living, breathing 3D constellation** that transforms how we consume academic content. Navigate through floating research nodes, trigger hyperfocus-friendly interfaces, and experience the future of knowledge sharing.
 
