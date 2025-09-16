@@ -154,7 +154,7 @@ const researchData = {
       "hyperfocusTip": "These tools are battle-tested by neurodivergent developers worldwide!"
     }
   }
-];
+await new Promise(resolve => setTimeout(resolve, 200));
 
   "connections": [
     {"from": "origins", "to": "current"},
