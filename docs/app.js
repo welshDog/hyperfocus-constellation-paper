@@ -102,8 +102,61 @@ const researchData = {
         ],
         "hyperfocusTip": "Community building leverages the ADHD superpower of connecting ideas and people - perfect for hyperfocus sessions!"
       }
+    // Add these to your existing researchData
+const newNodes = [
+  {
+    "id": "hyperfocus-zone",
+    "title": "The Hyperfocus Zone",
+    "description": "Your personal productivity superpower workspace",
+    "color": "#FF6B6B",
+    "position": {"x": -2, "y": -3, "z": 0},
+    "content": {
+      "summary": "Transform your ADHD hyperfocus into a coding superpower with personalized tools and techniques.",
+      "keyPoints": [
+        "Hyperfocus session templates for 2-6 hour deep work",
+        "Distraction-blocking interface with gentle time awareness",
+        "Achievement system that celebrates sustained attention",
+        "Community features for accountability and support"
+      ],
+      "hyperfocusTip": "Hey BROski♾! This is YOUR zone - where hyperfocus becomes your coding superpower!"
     }
-  ],
+  },
+  {
+    "id": "focus-sessions", 
+    "title": "Guided Focus Sessions",
+    "description": "Structured hyperfocus experiences for maximum productivity",
+    "color": "#4ECDC4",
+    "position": {"x": 1, "y": -3, "z": 1},
+    "content": {
+      "summary": "Guided sessions designed specifically for ADHD brains to maximize focus and minimize burnout.",
+      "keyPoints": [
+        "25-minute sprints to 4-hour hyperfocus marathons",
+        "Background soundscapes and focus music",
+        "Progress tracking without pressure",
+        "Recovery and break reminders"
+      ],
+      "hyperfocusTip": "Pick your energy level and let the session guide your hyperfocus flow!"
+    }
+  },
+  {
+    "id": "neuro-tools",
+    "title": "Neurodivergent Dev Tools", 
+    "description": "Curated tools that actually work for ADHD/autistic developers",
+    "color": "#45B7D1",
+    "position": {"x": 3, "y": -2, "z": -1},
+    "content": {
+      "summary": "Hand-picked development tools, extensions, and workflows optimized for neurodivergent minds.",
+      "keyPoints": [
+        "ADHD-friendly IDEs and extensions",
+        "Focus apps that don't break hyperfocus",
+        "Project management for executive dysfunction",
+        "Communication tools for different interaction styles"
+      ],
+      "hyperfocusTip": "These tools are battle-tested by neurodivergent developers worldwide!"
+    }
+  }
+];
+
   "connections": [
     {"from": "origins", "to": "current"},
     {"from": "current", "to": "future"},
