@@ -101,9 +101,8 @@ const researchData = {
           "Creating accessible, flow-friendly work environments"
         ],
         "hyperfocusTip": "Community building leverages the ADHD superpower of connecting ideas and people - perfect for hyperfocus sessions!"
-      }
-    // Add these to your existing researchData
-const newNodes = [
+    }
+  },
   {
     "id": "hyperfocus-zone",
     "title": "The Hyperfocus Zone",
