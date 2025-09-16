@@ -1,1 +1,39 @@
+const AchievementSystem = {
+  categories: {
+    focus: [
+      { name: "First Focus", minutes: 25, xp: 100, badge: "🎯" },
+      { name: "Hyperfocus Hero", minutes: 60, xp: 250, badge: "⚡" },
+      { name: "Deep Work Master", minutes: 120, xp: 500, badge: "🧠" },
+      { name: "Marathon Coder", minutes: 240, xp: 1000, badge: "🏃‍♂️" },
+      { name: "BROski♾ Legend", minutes: 480, xp: 2000, badge: "👑" }
+    ],
+    exploration: [
+      { name: "Origins Explorer", nodes: ["origins"], xp: 150, badge: "🏅" },
+      { name: "Future Visionary", nodes: ["future"], xp: 200, badge: "🔮" },
+      { name: "Constellation Master", nodes: "all", xp: 500, badge: "🌟" }
+    ],
+    community: [
+      { name: "Helper", helpCount: 5, xp: 300, badge: "🤝" },
+      { name: "Mentor", mentorSessions: 10, xp: 750, badge: "👨‍🏫" },
+      { name: "Community Leader", contributions: 25, xp: 1500, badge: "👑" }
+    ]
+  },
 
+  checkAndUnlock(category, progress) {
+    this.categories[category].forEach(achievement => {
+      if (this.meetsRequirement(achievement, progress)) {
+        this.unlockAchievement(achievement);
+      }
+    });
+  },
+
+  unlockAchievement(achievement) {
+    // Add XP, show notification, update profile
+    const userProfile = this.getUserProfile();
+    userProfile.xp += achievement.xp;
+    userProfile.achievements.push(achievement);
+    
+    this.showAchievementUnlock(achievement);
+    this.saveUserProfile(userProfile);
+  }
+};
